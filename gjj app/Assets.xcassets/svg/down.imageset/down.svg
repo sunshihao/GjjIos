@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>down</title>
+    <g id="移动端" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.4">
+        <g id="首页-展开-1209" transform="translate(-327, -1867)" fill="#000000" fill-rule="nonzero">
+            <g id="down" transform="translate(326.9999, 1867)">
+                <rect id="矩形" opacity="0" x="0" y="0" width="16" height="16"></rect>
+                <polygon id="路径" points="8.00228125 9.68 3.83275 5.512375 3.02476563 6.32 8.00265625 11.2952344 12.975625 6.32 12.1672344 5.512375"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
