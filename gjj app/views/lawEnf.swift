@@ -7,6 +7,20 @@
 
 import SwiftUI
 
+struct RoundedCornerShape: Shape {
+    var radius: CGFloat
+    var corners: UIRectCorner
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(
+            roundedRect: rect,
+            byRoundingCorners: corners,
+            cornerRadii: CGSize(width: radius, height: radius)
+        )
+        return Path(path.cgPath)
+    }
+}
+
 struct lawEnf: View {
     var body: some View {
         VStack(alignment: .leading) {
@@ -30,8 +44,11 @@ struct lawEnf: View {
                 endPoint: .bottomTrailing
             ))
             .shadow(color: Color.gray.opacity(0.5), radius: 16, x: 0, y: 12)
-            .cornerRadius(8)
-            
+//            .cornerRadius(8)
+            .clipShape(
+                RoundedCornerShape(radius: 8, corners: [.bottomLeft, .bottomRight]) // 仅保留底部圆角
+            )
+            .offset(y: -20)
             
         }
         .padding(.horizontal, 17.0)
