@@ -1,13 +1,12 @@
 //
 //  service.swift
-//  gjj app
-//
+//  便民服务
 //  Created by sunshihao on 2025/2/7.
 //
 
 import SwiftUI
 
-struct service: View {
+struct conService: View {
     
     // 定义结构体
     struct ServiceBtns: Identifiable {
@@ -34,15 +33,15 @@ struct service: View {
     var body: some View {
         HStack(alignment: .center) {
             Text("便民服务").font(.system(size: 16)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-            .padding(.bottom, 15)
-            .overlay(
-                Rectangle()
-                    .frame(width: 31, height: 3) // 线条高度
-                    .foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255)), // 线条颜色
-                alignment: .bottom // 让线条对齐到底部
-            )
+                .padding(.vertical, 15)
+                .overlay(
+                    Rectangle()
+                        .frame(width: 31, height: 3) // 线条高度
+                        .foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255)), // 线条颜色
+                    alignment: .bottom // 让线条对齐到底部
+                )
             Spacer()
-            Text("更多").font(.system(size: 13)).padding(.bottom, 15).foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
+            Text("更多").font(.system(size: 13)).padding(.vertical, 15).foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
         }
         .padding(.horizontal, 17.0)
         .overlay(
@@ -52,6 +51,7 @@ struct service: View {
             alignment: .bottom
         )
         .padding(.bottom, 10)
+        .background(Color.white)
         
         // 便民服务
         LazyVGrid(columns: [GridItem(.flexible(minimum: 115, maximum: 115)), GridItem(.flexible(minimum: 115, maximum: 115)), GridItem(.flexible(minimum: 115, maximum: 115))], spacing: 7){
@@ -64,24 +64,24 @@ struct service: View {
                         .foregroundColor(Color.black)
                         .padding(.top, 2.0)
                         .font(.system(size: 13))
-
+                    
                 }
                 .frame(width: 115,height: 71)
                 .background(Color(red: 248/255, green: 250/255, blue: 255/255)) // 设置背景
                 .cornerRadius(10) // 圆角
-//                    .overlay( // 叠加边框
-//                        RoundedRectangle(cornerRadius: 10)
-//                            .stroke(Color(red: 215/255, green: 220/255, blue: 233/255), lineWidth: 1)
-//                    )
+                //                    .overlay( // 叠加边框
+                //                        RoundedRectangle(cornerRadius: 10)
+                //                            .stroke(Color(red: 215/255, green: 220/255, blue: 233/255), lineWidth: 1)
+                //                    )
                 .border(Color(red: 215/255, green: 220/255, blue: 233/255), width: 1) // 添加黑色边框
             }
         }
-        .background(Color.white)
         .frame(width: .infinity)
         .padding(.horizontal, 17.0)
+        .background(Color.white)
     }
 }
 
 #Preview {
-    service()
+    conService()
 }

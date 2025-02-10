@@ -32,8 +32,10 @@ struct home: View {
                     Image("list").frame(width: 21, height: 21)
                 }
             }
+            .frame(height: 47)
             .padding(.horizontal, 17.0)
-            .frame(width: .infinity,height: 47)
+            .background(Color.white)
+            
             
             // 轮播
             TabView {
@@ -48,37 +50,47 @@ struct home: View {
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .interactive))
             .frame(width: .infinity,height: 210)
             
+            
             // 新闻
             VStack {
                 // 顶部标签
-                Picker("Options", selection: $selectedTab) {
-                    Text("中心新闻").tag(0)
-                    Text("行业新闻").tag(1)
-                    Text("资金使用情况").tag(2)
-                    Text("执法公告").tag(3)
-                    Text("更多").tag(4)
+                HStack(alignment: .center) {
+                    Picker("Options", selection: $selectedTab) {
+                        Text("中心新闻").tag(0)
+                        Text("行业新闻").tag(1)
+                        Text("资金使用情况").tag(2)
+                        Text("执法公告").tag(3)
+                        
+                    }
+                    .pickerStyle(PalettePickerStyle())
+                    
+                    Spacer()
+                    
+                    Text("更多").font(.system(size: 13)).foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
                 }
                 .padding(.horizontal, 17.0)
-                .pickerStyle(PalettePickerStyle())
+                .background(Color.white)
                 
                 // 内容视图
                 TabView(selection: $selectedTab) {
-                    newsList().tag(0)
+                    newsList().padding(.horizontal, 17.0).tag(0)
                     Text("行业新闻内容").tag(1)
                     Text("资金使用情况内容").tag(2)
                     Text("执法公告内容").tag(3)
                     Text("更多内容").tag(4)
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .background(Color.white)
                 
                 
-            }.frame(width: .infinity,height: 325)
+            }.frame(minHeight: 315, maxHeight: 325)
+                .background(Color.white)
             
             // 专题服务
-            service2()
+            speService().offset(y: 10) 
             
             // 便民服务
-            service()
+            conService().offset(y: 10) 
             
             // 互动社区
             intCom().padding(.top, 9.0)
@@ -92,7 +104,7 @@ struct home: View {
             // 通用底部
             footer()
         }
-//        .background(Color(red: 246/255, green: 249/255, blue: 255/255)) // 设置背景
+        .background(Color(red: 246/255, green: 249/255, blue: 255/255)) // 设置背景
     }
 }
 

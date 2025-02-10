@@ -1,28 +1,29 @@
 //
-//  service2.swift
-//  gjj app
-//
+//  speService.swift
+//  专题服务
 //  Created by sunshihao on 2025/2/8.
 //
 
 import SwiftUI
 
-struct service2: View {
+struct speService: View {
     
     let service_imgs = ["service", "service", "service"] // 替换为你的图片名称
     
     var body: some View {
         HStack(alignment: .center) {
             Text("专题服务").font(.system(size: 16)).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                .padding(.bottom, 15)
+                .padding(.vertical, 15)
                 .overlay(
                     Rectangle()
                         .frame(width: 31, height: 3) // 线条高度
-                        .foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255)), // 线条颜色
+                        .foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
+                        .background(Color.white), // 线条颜色
                     alignment: .bottom // 让线条对齐到底部
+                    
                 )
             Spacer()
-            Text("更多").font(.system(size: 13)).padding(.bottom, 15).foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
+            Text("更多").font(.system(size: 13)).padding(.vertical, 15).foregroundColor(Color(red: 0/255, green: 82/255, blue: 217/255))
         }
         .padding(.horizontal, 17.0)
         .overlay(
@@ -32,6 +33,7 @@ struct service2: View {
             alignment: .bottom
         )
         .padding(.bottom, 10)
+        .background(Color.white)
         
         ACarousel(service_imgs,id: \.self,spacing: 8,
                   
@@ -44,10 +46,10 @@ struct service2: View {
         }
         .padding(.bottom, 19.0)
         .frame(height: 243)
-        
+        .background(Color.white)
     }
 }
 
 #Preview {
-    service2()
+    speService()
 }

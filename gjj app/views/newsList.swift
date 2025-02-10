@@ -15,24 +15,23 @@ struct Message: Identifiable {
 }
 
 var Messages = [
-    Message(name: "市公积金管理中心主动作为延伸服务", image: "new", date: "2024-11-04"),
+    
     Message(name: "2024年上半年天津市住房公积金管理…", image: "new", date: "2024-11-04"),
     Message(name: "我市租房提取住房公积金新政", image: "note", date: "2024-11-04"),
     Message(name: "2024年上半年天津市住房公积金管理…", image: "note", date: "2024-11-04"),
     Message(name: "市公积金管理中心主动作为延伸服务", image: "note", date: "2024-11-04"),
     Message(name: "我市租房提取住房公积金新政实施", image: "note", date: "2024-11-04"),
-
+    Message(name: "市公积金管理中心主动作为延伸服务", image: "new", date: "2024-11-04"),
 ]
 
 struct newsList: View {
     var body: some View {
-        List {
+        VStack(alignment: .leading) {
             ForEach(Messages) { Message in
                 HStack {
                     Image(Message.image)
                         .resizable()
                         .frame(width: 15, height: 15)
-//                        .cornerRadius(5)
                     Text(Message.name).font(.system(size: 13))
                     Spacer()
                     Text(Message.date).font(.system(size: 13))
