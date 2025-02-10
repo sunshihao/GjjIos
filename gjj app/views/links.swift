@@ -36,7 +36,8 @@ struct links: View {
                         }
                     }
                 }
-            }            
+            }
+            .background(Color.white)
         }
         .background(Color.white)
         

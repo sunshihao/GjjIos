@@ -63,7 +63,7 @@ struct home: View {
                 
                 // 内容视图
                 TabView(selection: $selectedTab) {
-                    Text("中心新闻内容").tag(0)
+                    newsList().tag(0)
                     Text("行业新闻内容").tag(1)
                     Text("资金使用情况内容").tag(2)
                     Text("执法公告内容").tag(3)
@@ -81,14 +81,7 @@ struct home: View {
             service()
             
             // 互动社区
-            VStack(alignment: .leading) {
-                Image("intCom")
-                VStack(alignment: .leading) {
-                    Text("互动社区").font(.system(size: 19))
-                    Text("如遇相关问题。可以选择以下方式与我们联系。").font(.system(size: 13))
-                }
-            }
-            .padding(.horizontal, 17.0)
+            intCom().padding(.top, 9.0)
             
             // 行政执法
             lawEnf()
@@ -99,7 +92,7 @@ struct home: View {
             // 通用底部
             footer()
         }
-        //.background(Color(red: 246/255, green: 249/255, blue: 255/255)) // 设置背景
+//        .background(Color(red: 246/255, green: 249/255, blue: 255/255)) // 设置背景
     }
 }
 

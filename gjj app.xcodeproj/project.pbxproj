@@ -18,6 +18,8 @@
 		02675E482D5600A50063FC56 /* service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02675E472D5600A50063FC56 /* service.swift */; };
 		02675E4A2D56092F0063FC56 /* banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02675E492D56092F0063FC56 /* banner.swift */; };
 		02A4CB862D5990B3008FEAD3 /* lawEnf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4CB852D5990B3008FEAD3 /* lawEnf.swift */; };
+		02AA1CC12D59A8EE007419E5 /* intCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC02D59A8EE007419E5 /* intCom.swift */; };
+		02AA1CC32D59ADCE007419E5 /* newsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC22D59ADCE007419E5 /* newsList.swift */; };
 		02E08CA12D3F92480017D96A /* gjj_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA02D3F92480017D96A /* gjj_appApp.swift */; };
 		02E08CA32D3F92480017D96A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA22D3F92480017D96A /* ContentView.swift */; };
 		02E08CA52D3F92480017D96A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA42D3F92480017D96A /* Item.swift */; };
@@ -38,6 +40,8 @@
 		02675E472D5600A50063FC56 /* service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = service.swift; sourceTree = "<group>"; };
 		02675E492D56092F0063FC56 /* banner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = banner.swift; sourceTree = "<group>"; };
 		02A4CB852D5990B3008FEAD3 /* lawEnf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lawEnf.swift; sourceTree = "<group>"; };
+		02AA1CC02D59A8EE007419E5 /* intCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intCom.swift; sourceTree = "<group>"; };
+		02AA1CC22D59ADCE007419E5 /* newsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsList.swift; sourceTree = "<group>"; };
 		02E08C9D2D3F92480017D96A /* gjj app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gjj app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E08CA02D3F92480017D96A /* gjj_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gjj_appApp.swift; sourceTree = "<group>"; };
 		02E08CA22D3F92480017D96A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				02E08CB12D3F93D80017D96A /* home.swift */,
+				02AA1CC22D59ADCE007419E5 /* newsList.swift */,
+				02AA1CC02D59A8EE007419E5 /* intCom.swift */,
 				0260EAF42D57419100861754 /* links.swift */,
 				0260EAF02D570B6400861754 /* service2.swift */,
 				02675E472D5600A50063FC56 /* service.swift */,
@@ -193,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0260EAF12D570B6400861754 /* service2.swift in Sources */,
+				02AA1CC12D59A8EE007419E5 /* intCom.swift in Sources */,
 				02E08CA32D3F92480017D96A /* ContentView.swift in Sources */,
 				0260EAEC2D56F5F700861754 /* ACarousel.swift in Sources */,
+				02AA1CC32D59ADCE007419E5 /* newsList.swift in Sources */,
 				0260EAF32D57233600861754 /* footer.swift in Sources */,
 				0260EAED2D56F5F700861754 /* View+ReceiveTimer.swift in Sources */,
 				02E08CA52D3F92480017D96A /* Item.swift in Sources */,
