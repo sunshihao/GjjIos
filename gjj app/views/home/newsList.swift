@@ -1,7 +1,5 @@
 //
 //  newsList.swift
-//  gjj app
-//
 //  Created by sunshihao on 2025/2/10.
 //
 

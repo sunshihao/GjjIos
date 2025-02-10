@@ -20,6 +20,8 @@
 		02A4CB862D5990B3008FEAD3 /* lawEnf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A4CB852D5990B3008FEAD3 /* lawEnf.swift */; };
 		02AA1CC12D59A8EE007419E5 /* intCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC02D59A8EE007419E5 /* intCom.swift */; };
 		02AA1CC32D59ADCE007419E5 /* newsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC22D59ADCE007419E5 /* newsList.swift */; };
+		02AA1CC52D59D545007419E5 /* header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC42D59D545007419E5 /* header.swift */; };
+		02AA1CC92D59D695007419E5 /* swiper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA1CC82D59D695007419E5 /* swiper.swift */; };
 		02E08CA12D3F92480017D96A /* gjj_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA02D3F92480017D96A /* gjj_appApp.swift */; };
 		02E08CA32D3F92480017D96A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA22D3F92480017D96A /* ContentView.swift */; };
 		02E08CA52D3F92480017D96A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E08CA42D3F92480017D96A /* Item.swift */; };
@@ -42,6 +44,8 @@
 		02A4CB852D5990B3008FEAD3 /* lawEnf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lawEnf.swift; sourceTree = "<group>"; };
 		02AA1CC02D59A8EE007419E5 /* intCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intCom.swift; sourceTree = "<group>"; };
 		02AA1CC22D59ADCE007419E5 /* newsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newsList.swift; sourceTree = "<group>"; };
+		02AA1CC42D59D545007419E5 /* header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = header.swift; sourceTree = "<group>"; };
+		02AA1CC82D59D695007419E5 /* swiper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiper.swift; sourceTree = "<group>"; };
 		02E08C9D2D3F92480017D96A /* gjj app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gjj app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02E08CA02D3F92480017D96A /* gjj_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gjj_appApp.swift; sourceTree = "<group>"; };
 		02E08CA22D3F92480017D96A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +76,30 @@
 				0260EAEA2D56F5F700861754 /* AppLifeCycleModifier.swift */,
 			);
 			path = ACarousel;
+			sourceTree = "<group>";
+		};
+		02AA1CC62D59D577007419E5 /* layouts */ = {
+			isa = PBXGroup;
+			children = (
+				02AA1CC42D59D545007419E5 /* header.swift */,
+				0260EAF22D57233600861754 /* footer.swift */,
+			);
+			path = layouts;
+			sourceTree = "<group>";
+		};
+		02AA1CC72D59D5B9007419E5 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				02AA1CC22D59ADCE007419E5 /* newsList.swift */,
+				02AA1CC02D59A8EE007419E5 /* intCom.swift */,
+				0260EAF42D57419100861754 /* links.swift */,
+				0260EAF02D570B6400861754 /* speService.swift */,
+				02675E472D5600A50063FC56 /* conService.swift */,
+				02675E492D56092F0063FC56 /* banner.swift */,
+				02AA1CC82D59D695007419E5 /* swiper.swift */,
+				02A4CB852D5990B3008FEAD3 /* lawEnf.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		02E08C942D3F92480017D96A = {
@@ -115,15 +143,9 @@
 		02E08CB02D3F92570017D96A /* views */ = {
 			isa = PBXGroup;
 			children = (
+				02AA1CC72D59D5B9007419E5 /* home */,
+				02AA1CC62D59D577007419E5 /* layouts */,
 				02E08CB12D3F93D80017D96A /* home.swift */,
-				02AA1CC22D59ADCE007419E5 /* newsList.swift */,
-				02AA1CC02D59A8EE007419E5 /* intCom.swift */,
-				0260EAF42D57419100861754 /* links.swift */,
-				0260EAF02D570B6400861754 /* speService.swift */,
-				02675E472D5600A50063FC56 /* conService.swift */,
-				02675E492D56092F0063FC56 /* banner.swift */,
-				0260EAF22D57233600861754 /* footer.swift */,
-				02A4CB852D5990B3008FEAD3 /* lawEnf.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -208,10 +230,12 @@
 				02E08CA52D3F92480017D96A /* Item.swift in Sources */,
 				02E08CB22D3F93D80017D96A /* home.swift in Sources */,
 				0260EAEE2D56F5F700861754 /* ACarouselAutoScroll.swift in Sources */,
+				02AA1CC92D59D695007419E5 /* swiper.swift in Sources */,
 				02675E4A2D56092F0063FC56 /* banner.swift in Sources */,
 				0260EAF52D57419100861754 /* links.swift in Sources */,
 				02E08CA12D3F92480017D96A /* gjj_appApp.swift in Sources */,
 				0260EAEF2D56F5F700861754 /* AppLifeCycleModifier.swift in Sources */,
+				02AA1CC52D59D545007419E5 /* header.swift in Sources */,
 				02A4CB862D5990B3008FEAD3 /* lawEnf.swift in Sources */,
 				0260EAEB2D56F5F700861754 /* ACarouselViewModel.swift in Sources */,
 				02675E482D5600A50063FC56 /* conService.swift in Sources */,

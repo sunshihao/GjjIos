@@ -1,18 +1,30 @@
 //
-//  intCom.swift
-//  gjj app
-//
+//  lawEnf.swift
 //  Created by sunshihao on 2025/2/10.
 //
 
 import SwiftUI
 
-struct intCom: View {
+struct RoundedCornerShape: Shape {
+    var radius: CGFloat
+    var corners: UIRectCorner
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(
+            roundedRect: rect,
+            byRoundingCorners: corners,
+            cornerRadii: CGSize(width: radius, height: radius)
+        )
+        return Path(path.cgPath)
+    }
+}
+
+struct lawEnf: View {
     var body: some View {
         VStack(alignment: .leading) {
-            Image("intCom").resizable().frame(width: 359, height: 179)
+            Image("lawEnf").resizable().frame(width: 359, height: 179)
             VStack(alignment: .leading) {
-                Text("互动社区").font(.system(size: 19))
+                Text("行政执法").font(.system(size: 19))
                 HStack {
                     Text("如遇相关问题。可以选择以下方式与我们联系。").font(.system(size: 13))
                     Spacer()
@@ -41,6 +53,8 @@ struct intCom: View {
     }
 }
 
+
+
 #Preview {
-    intCom()
+    lawEnf()
 }
